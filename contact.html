@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A contact form for users. ">
+    <meta name="keywords" content="contact">
+    <meta name="author" content="Hsin Tang">
+    <title>Contact Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  
+  <body>
+    <header>
+        <h1>Contact Me.</h1>
+    </header>
+
+    <ul class="Bar">
+        <li class="left"><a href="index.html">Home</a></li>
+        <li class="left"><a href="resume.html">Resume</a></li>
+        <li class="left"><a href="Projects.html">Projects</a></li>
+        <li class="right"><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <section class="Contactcontainer">
+      <div class="form">
+        <form action ="Form.php" method ="post">
+          <h3>Send me a message:</h3><br>
+          <p>First name:</p>
+          <input type="text" id="firstname" name="firstname" size="10"><br><br>
+          <p>Last Name:</p>
+          <input type="text" id="lastname" name="lastname" size="10"><br><br>
+          <p>E-mail:</p>
+          <input type="text" id="email" name="email" size="30"><br><br>
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" rows="10" cols="50"></textarea><br><br><br><br>
+          <input type="submit" id="contact" value="Contact Me!">
+        </form>
+      </div>
+
+      <div class="info">
+        <h3>Contact Details</h3>
+        <br>
+        <hr>
+        <br>
+        <img src="images/user.png" alt="user" width="40">
+        <p>Hsin Tang (Trista)</p><br>
+        <img src="images/email.png" alt="email" width="40">
+        <p>h.tristang@gmail.com</p><br>
+        <img src="images/phone-call.png" alt="phone" width="40">
+        <p>(873) 455-9496</p><br>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy;2024 Hsin Tang. All rights reserved.</p>
+    </footer>
+
+  </body>
+</html>  
+      
+    

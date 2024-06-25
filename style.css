@@ -1,0 +1,303 @@
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+form, label,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+/* END CSS Reset*/
+
+body{
+    background-color: #ECFFB0;
+    font-family: Verdana, sans-serif;
+}
+
+header{
+    color: #073B3A;
+    text-align: center;
+    padding: 20px;
+}
+
+.Bar {
+    width: 100%;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #073B3A;
+    margin: 10px auto;
+}
+
+.Bar li {
+    display: inline; 
+}
+  
+li.left {
+    float: left;
+}
+
+li.right{
+    float: right;
+}
+  
+.Bar li a {
+    display: block;
+    padding: 8px;
+    background-color: #073B3A;
+    color: white;
+}
+
+p{
+    line-height: 30px;
+}
+
+footer{
+    margin: 5px;
+    text-align: center;
+
+}
+
+b{
+    color: #9F0202;
+}
+
+/* for index.html */
+
+.homePic {
+    position: relative;
+    width: 100%;
+}
+
+.homePic h3 {
+    background-color: white;
+    position: absolute;
+    color: red;
+    top: 50px;
+    right: 10px;
+    text-align: right;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px auto;
+    width: 95%;
+}
+
+.container div {
+    background-color: #CAE9FF;
+    padding: 30px;
+    width: 40%;
+    height: auto;
+    margin: 20px auto;
+}
+
+.Resume, .AC, .CP{
+    background-color: #AFD5AA;
+    padding: 5px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.Projects{
+    margin: 20px auto;
+    background-color: #E2EB98;
+    width: 90%;
+    padding: 30px;
+    position: relative;
+}
+
+.FixContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.EachProject {
+    background-color: #BAD9A2;
+    padding:20px;
+    width: 25%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.Projects a{
+    right: 50px;
+    bottom: 20px;
+    position: absolute;
+}
+
+.contact{
+    background-color: #073B3A;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+.contactform {
+    background-color: white;
+    padding: 5px;
+}
+
+/* for resume.html */
+
+.resume{
+    width: 80%;
+    padding: 20px;
+    margin: 10px auto;
+}
+
+.CVContainer{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    background-color: #5C5346;
+    padding: 20px;
+}
+.CVPic{
+    width: 30%;
+    text-align: center;
+}
+
+.CVPic img{
+    height: 150px;
+    border-radius: 50%;
+}
+
+.CVtitle{
+    width: 70%;
+    text-align: center;
+    color: white;
+    padding-top: 40px;
+}
+hr {
+    border: 2px solid black;
+}
+
+.CVbody{
+    display: flex;
+    justify-content: space-between;
+}
+.CVright{
+    width: 65%;
+}
+.CVleft{
+    width: 30%;
+}
+
+.CVleft div, .CVright div{
+    background-color: #EEE0CB;
+    padding: 20px;
+    margin: 20px auto;
+    height: auto;
+}
+
+.CVright ul{
+    padding: 20px;
+    line-height: 30px;
+}
+
+
+/*for Project.html*/
+
+.switch {
+    display: flex;
+    align-items: center;
+    bottom: 20px;
+    right: 20px;
+    position: fixed;
+    background-color:  #f0f0f0;
+    color: #4abc96;
+}
+
+#prevButton, #nextButton {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    border: none;
+}
+
+#prevButton {
+    background-image: url("images/previous.png");
+}
+
+#nextButton {
+    background-image: url("images/next.png");
+}
+
+.project {
+    margin: 30px auto;
+    width: 80%;
+}
+
+.project img{
+    width: 100%;
+}
+
+.project h3{
+    white-space:nowrap
+}
+
+/* for contact.html */
+
+.Contactcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px auto;
+    width: 95%;
+}
+
+.form{
+    background-color: #F1E8B8;
+    padding: 30px;
+    width: 50%;
+    height: auto;
+    margin: 20px auto;
+    position: relative;
+}
+
+.info{
+    padding: 30px;
+    width: 20%;
+    margin: 100px auto;
+}
+
+#contact{
+    background-color: #191919;
+    color: white;
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    right: 50px;
+    bottom: 20px;
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

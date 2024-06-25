@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A page introducing my projects.">
+    <meta name="keywords" content="Projects">
+    <meta name="author" content="Hsin Tang">
+    <title>Projects By Hsin Tang.</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  
+  <body>
+    <header>
+        <h1>Projects By Hsin Tang.</h1>
+    </header>
+
+    <ul class="Bar">
+        <li class="left"><a href="index.html">Home</a></li>
+        <li class="left"><a href="resume.html">Resume</a></li>
+        <li class="left"><a href="Projects.html">Projects</a></li>
+        <li class="right"><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class=switch>
+        <button id="prevButton" onclick="showProject(-1)"></button>
+        <h3>&nbsp;&nbsp;Switch the projects.&nbsp;&nbsp;</h3>
+        <button id="nextButton" onclick="showProject(1)"></button>
+    </div>
+
+
+    <div class="project" id="project1">
+        <h2>Project: My hometown page</h2><br>
+        <h3>Date Completed: 2024.JAN.22</h3><br>
+        <h3>Description:</h3>
+        This is my first web programming project .
+        On this page, I learned to use the difference between h1 and h6.
+        At the same time, I made use of the <b>Ordered list, Unordered list and hyperlink</b> as well. 
+        Final, to make my pictures neater, I used a table.<br><br><br>
+        <img src="images/WebProject1.png" alt="Project 1 Screenshot">
+    </div>
+
+    <div class="project" id="project2">
+        <h2>Project: Registration form</h2><br>
+        <h3>Date Completed: 2024.Feb.15</h3><br>
+        <h3>Description:</h3>
+        I used <b>Visual Studio Code</b> to create <b>HTML</b> and <b>CSS</b> for this project. 
+        First, use HTML architecture to design the website structure, and then use CSS to make it beautiful. 
+        HTML has functions like <b>table</b> and <b>list</b>, and in CSS, I have included page <b>background colors, fonts</b>, and other elements.<br><br><br>
+        <img src="images/WebProject2.png" alt="Project 2 Screenshot">
+    </div>
+
+    <div class="project" id="project3">
+        <h2>Project: My HealthCare System - TestDemo</h2><br>
+        <h3>Date Completed: 2024.MAR.04</h3><br>
+        <h3>Description:</h3>
+        I use <b>Eclipse</b> to create JavaProject. 
+        I used multiple classes at the same time to link to a My HealthCare System.
+        TestDemo.class is the last collection. 
+        This class can print out a patient's basic information and medical information, and can also <b>calculate the BMI based on the patient's height and weight</b>.<br><br><br>
+        <img src="images/JAVAProject1.png" alt="Project 3 Screenshot">
+    </div>
+
+    <div class="project" id="project4">
+        <h2>Project: Medals</h2><br>
+        <h3>Date Completed: 2024.JAN.19</h3><br>
+        <h3>Description:</h3>
+        I use <b>Eclipse</b> to create JavaProject. 
+        This is a project that can <b>count the number of medals</b>.
+        At first, an <b>array</b> was used to input the number of medals for each country, 
+        and then the number of gold, silver and bronze medals were calculated separately. 
+        Finally, only the number of countries with at least one medal is shown.<br><br><br>
+        <img src="images/JAVAProject2.png" alt="Project 4 Screenshot">
+    </div>
+
+    <div class="project" id="project5">
+        <h2>Project: Dolls Collection Management System</h2><br>
+        <h3>Date Completed: 2024.FEB.23</h3><br>
+        <h3>Description:</h3>
+        A "Doll Collection Management" application was created using <b>Access</b> to provide a seamless experience for collectors. 
+        This innovative app is designed to help users catalog, categorize and effectively manage their doll collections. 
+        A variety of <b>forms and reports</b> are also provided for use.<br><br><br>
+        <img src="images/DBProject.png" alt="Project 5 Screenshot">
+    </div>
+
+
+
+    <script>
+        let currentProject = 1;
+        showProject(currentProject);
+
+        function showProject(n) {
+            const projects = document.getElementsByClassName('project');
+            currentProject += n;
+
+            if (currentProject > projects.length) {
+                currentProject = 1;
+            }
+            if (currentProject < 1) {
+                currentProject = projects.length;
+            }
+
+            for (let i = 0; i < projects.length; i++) {
+                projects[i].style.display = 'none';
+            }
+
+            projects[currentProject -1].style.display = 'block';
+        }
+    </script>
+    <footer>
+        <p>&copy;2024 Hsin Tang. All rights reserved.</p>
+    </footer>     
+  </body>
+</html>
